@@ -35,5 +35,5 @@ for z in data[1:]:
 print("負：", minus)
 print("正：", plus)
 print("零：", zero)
-bunsyo = [moji.strip() for moji in data]
-print(bunsyo + "desu")
+#bunsyo = [moji.strip() for moji in data]
+#print(bunsyo + "desu")
