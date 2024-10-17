@@ -8,7 +8,11 @@ print(float(data[1])+float(data[2]))
 
 x = 0.0
 for n in data[1:]:
-	x += float(n)
+    try:
+	    x += int(n)
+    except:
+        x += float(n)
+
 
 print(x)
 
@@ -33,5 +37,3 @@ print("正：", plus)
 print("零：", zero)
 bunsyo = [moji.strip() for moji in data]
 print(bunsyo + "desu")
-
-
