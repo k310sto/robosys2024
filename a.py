@@ -6,7 +6,7 @@ data = [line.strip() for line in st.stdin] #改行で次の添え字へいくら
 print(float(data[1])+float(data[2]))
 
 
-x = 0.0
+x = 0
 for n in data[1:]:
     try:
 	    x += int(n)
