@@ -3,20 +3,26 @@ import sys as st
 
 data = [line.strip() for line in st.stdin] #改行で次の添え字へいくらしい
 
-print(float(data[1])+float(data[2]))
+try:
+    print(int(data[1])+int(data[2]))
+except:
+    print(float(data[1])+float(data[2]))
 
 
-x = 0
-for n in data[1:]:
-    try:
-	    x += int(n)
-    except:
-        x += float(n)
+def tonum(n):
+    for n in data[1:]:
+        try:
+            x += int(n)
+        except:
+            x += float(n)
 
 
 print(x)
 
-nums = [ float(e) for e in data[1:] ]
+try:
+    nums = [ int(e) for e in data[1:] ]
+except:
+    nums = [ float(e) for e in data[1:] ]
 print(sum(nums))
 
 minus = 0
