@@ -37,3 +37,4 @@ print("正：", plus)
 print("零：", zero)
 #bunsyo = [moji.strip() for moji in data]
 #print(bunsyo + "desu")
+#つけめん
