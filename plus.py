@@ -27,7 +27,7 @@ print(sum(nums))
 
 minus = 0
 plus = 0
-zero = 0
+zero = 1
 
 
 for z in data[1:]:
@@ -43,4 +43,3 @@ print("正：", plus)
 print("零：", zero)
 #bunsyo = [moji.strip() for moji in data]
 #print(bunsyo + "desu")
-#そうめん
