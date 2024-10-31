@@ -6,10 +6,10 @@ ng () {
 }
 
 res=0
-a=山田
-[ "$a" = 上田 ] || ng "$LINENO"
-[ "$a" = 山田 ] || ng "$LINENO"
+out=$(seq 5 | ./plus.py)
+[ "${out}" = "15.0" ] || ng "$LINENO"
 
-exit $res
+[ "${res}" = 0 ] && echo OK
+exit "$res"
 
 
